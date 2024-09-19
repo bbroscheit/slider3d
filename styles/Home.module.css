@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .banner{
   width: 100%;
   height: 100vh;
@@ -15,6 +17,7 @@
   transform-style: preserve-3d;
   transform: perspective(1000px);
   animation: autoRun 25s linear infinite;
+  z-index: 3;
 }
 
 @keyframes autoRun{
@@ -40,20 +43,22 @@
 }
 
 .banner .content{
+  margin-left: 10px;
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: min(1400px, 100vw);
   height: max-content;
-  padding-bottom: 100px;
+  padding-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  color: #3849b8;
   z-index: 1;
 }
-.banner .content h1{
+/* .banner .content h1{
   font-family: 'ICA Rubrik';
   font-size: 16em;
   line-height: 1em;
@@ -67,17 +72,29 @@
   z-index: 2;
   -webkit-text-stroke: 2px #d2d2d2;
   color: transparent;
-}
+} */
 .banner .content .author{
   font-family: Poppins;
   text-align: right;
   max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  
 }
 .banner .content h2{
-  font-size: 3em;
+  font-size: 2em;
+  width: 50vw;
+  text-align: left;
 }
+
+.paragraph{
+  text-align: left;
+  width: 50vw;
+}
+
 .banner .content .model{
-  /* background-image: url(images/model.png); */
+  background-image: url(../public/patriarca.png); 
   width: 100%;
   height: 75vh;
   position: absolute;
@@ -86,7 +103,7 @@
   background-size: auto 130%;
   background-repeat: no-repeat;
   background-position: top center;
-  z-index: 1;
+  z-index: 0;
 }
 
 @media screen and (max-width: 1023px) {

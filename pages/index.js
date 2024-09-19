@@ -25,17 +25,15 @@ export default function Home() {
           <div className={styles.item} style={{'--position':11}}><Image src="/degel.jpg" width={100} height={100} alt="Degel" className={styles.img}/></div>
           <div className={styles.item} style={{'--position':12}}><Image src="/albafica.jpg" width={100} height={100} alt="Albafica" className={styles.img}/></div>
         </div>
-      </div>
-      <div className={styles.content}>
-            <h1 data-content="CSS ONLY">
-                CSS ONLY
-            </h1>
+        <div className={styles.content}>
             <div className={styles.author}>
                 <h2>BERNARDO BROSCHEIT</h2>
-                <p><b>Fullstack Developer</b></p>
+                <p className={styles.paragraph}><b>Fullstack Developer</b></p>
             </div>
-            
+            <div className={styles.model}></div>
         </div>
+      </div>
+      
 
     </>
   );
